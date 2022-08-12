@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="img" onclick="changeImg()" src="https://upload.motgame.vn/photos/motgame-vn/2021/09/cosplay-D.Va-cb-1.jpg" width="400px" height="300px">
+</body>
+</html>
+
+<script>
+    let count = 1;
+
+    function changeImg() {
+        if (count === 1) {
+            document.getElementById("img").src = "https://upload.motgame.vn/photos/motgame-vn/2021/09/cosplay-D.Va-cb-8.jpg";
+            count++;
+        } else {
+            count = 1;
+            document.getElementById("img").src = "https://upload.motgame.vn/photos/motgame-vn/2021/09/cosplay-D.Va-cb-1.jpg";
+        }
+    }
+
+</script>
